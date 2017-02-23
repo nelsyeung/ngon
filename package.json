@@ -1,6 +1,6 @@
 {
   "name": "ngon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create and manipulate polygons of any number of sides",
   "main": "lib/ngon.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nelsyeung/es6-lib-template.git"
+    "url": "https://github.com/nelsyeung/ngon.git"
   },
   "keywords": [
     "browser",
