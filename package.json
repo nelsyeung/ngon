@@ -1,6 +1,6 @@
 {
   "name": "ngon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create and manipulate polygons of any number of sides",
   "main": "lib/ngon.js",
   "scripts": {
