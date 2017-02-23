@@ -1,0 +1,72 @@
+{
+  "name": "ngon",
+  "version": "1.0.0",
+  "description": "Create and manipulate polygons of any number of sides",
+  "main": "lib/ngon.js",
+  "scripts": {
+    "build": "webpack && cross-env NODE_ENV=production webpack -p",
+    "start": "webpack --progress --color -w",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nelsyeung/es6-lib-template.git"
+  },
+  "keywords": [
+    "browser",
+    "library"
+  ],
+  "author": "Nelson Yeung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nelsyeung/ngon/issues"
+  },
+  "homepage": "https://github.com/nelsyeung/ngon",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-istanbul": "^3.1.2",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.18.0",
+    "cross-env": "^3.1.4",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^19.0.2",
+    "webpack": "^2.2.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    "extends": "airbnb-base"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  }
+}
